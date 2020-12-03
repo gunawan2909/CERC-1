@@ -6,6 +6,7 @@ public class Data {
     private String harga []= new String[]{"Rp.35.500","Rp.23.500","Rp.25.500","Rp.26.500","Rp.26.500"};
     private int gambar []=new int[]{R.drawable.naruto,R.drawable.dragonball,R.drawable.opm,R.drawable.gintama,R.drawable.bakugan};
 
+
     public static ArrayList<Komik> getListData(){
         Data komikData = new Data();
         ArrayList<Komik> list = new ArrayList<>();

@@ -76,14 +76,15 @@ public class KomikFragment extends Fragment {
 
         listAdapter.setOnItemClickCallback(new ListAdapter.OnItemClickCallback() {
             @Override
-            public void onItemClicked(Komik X) {
-                showSelectedKomik(X);
+            public void onItemClicked(Komik data) {
+                Intent intent = new Intent(getContext(), DetailActivity2.class);
+                intent.putExtra("name",  data.getNama());
+                intent.putExtra("jenis",  data.getHarga());
+                intent.putExtra("photo",  data.getGambar());
+                startActivity(intent);
             }
         });
         return view;
-    }
-
-    private void showSelectedKomik(Komik X){
 
     }
     }
